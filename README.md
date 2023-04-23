@@ -1,16 +1,9 @@
-## API COURSE (Project Files)
-
-**Created By :** Mahmoud Anwar
-**Email :** Engsahaly@gmail.com
-
-This is the main readme file for the Project files used in the API Course on Udemy
-
 ## Installation
 
 To get started, clone this repository.
 
 ```
-git clone https://github.com/engsahaly/API-COURSE.git
+git clone https://github.com/AhmadAbdElhameed/laravel-api-for-simple-web
 ```
 
 Next, copy your `.env.example` file as `.env` and configure your Database connection.
