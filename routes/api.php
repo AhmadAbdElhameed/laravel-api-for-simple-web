@@ -44,6 +44,21 @@ Route::post('/message', MesaageController::class);
 ## ---------------------------------- DOMAINS MODULE
 Route::get('/domains', DomainController::class);
 
+
+## ---------------------------------- ADS MODULE
+Route::prefix("ads")->controller(AdController::class)->group(function(){
+
+    Route::get('/','index');
+    Route::get('/latest','latest');
+    Route::get('/domain/{domain_id}','domain');
+    Route::get('/search','search');
+});
+
+
+
+
+
+
 //## ---------------------------------- ADS MODULE
 //Route::prefix('ads')->controller(AdController::class)->group(function () {
 //    // basic
