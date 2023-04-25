@@ -44,3 +44,12 @@ You have to run all the migration files included with the project and also run s
 php artisan migrate
 php artisan db:seed
 ```
+
+## Api Documentation
+
+To view the Api through the link below .
+
+```
+https://documenter.getpostman.com/view/24013481/2s93Y6seqb
+```
+

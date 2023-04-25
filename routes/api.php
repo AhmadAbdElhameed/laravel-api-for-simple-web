@@ -52,25 +52,12 @@ Route::prefix("ads")->controller(AdController::class)->group(function(){
     Route::get('/latest','latest');
     Route::get('/domain/{domain_id}','domain');
     Route::get('/search','search');
+
+    Route::middleware('auth:sanctum')->group(function(){
+        Route::post('create','create');
+        Route::post('update/{adId}','update');
+        Route::get('delete/{adId}','delete');
+        Route::get('myads','myads');
+    });
 });
 
-
-
-
-
-
-//## ---------------------------------- ADS MODULE
-//Route::prefix('ads')->controller(AdController::class)->group(function () {
-//    // basic
-//    Route::get('/', 'index');
-//    Route::get('/latest', 'latest');
-//    Route::get('/domain/{domain_id}', 'domain');
-//    Route::get('/search', 'search');
-//    // User API ads endpoint
-//    Route::middleware('auth:sanctum')->group(function () {
-//        Route::post('create', 'create');
-//        Route::post('update/{adId}', 'update');
-//        Route::get('delete/{adId}', 'delete');
-//        Route::get('myads', 'myads');
-//    });
-//});
